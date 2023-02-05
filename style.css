@@ -1,0 +1,51 @@
+.root {
+  background-color: black;
+  max-width: 1280px;
+  min-width: 320px;
+}
+
+.header {
+}
+.header__logo {
+  width: 142px;
+  height: 33px;
+}
+.content {
+}
+.profile {
+}
+.profile__image {
+  border-radius: 50%;
+}
+.profile__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+
+  color: #ffffff;
+}
+.profile__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+.profile__edit {
+}
+.elements {
+}
+.footer {
+}
+.footer__copyright {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #545454;
+}
