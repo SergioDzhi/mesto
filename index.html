@@ -9,65 +9,86 @@
 </head>
 
 <body class="root">
-    <header class="header">
-        <img class="header__logo" src="./images/logo.png" alt="Логотип Место">
+    <div class="page">
+        <header class="header">
+            <img class="header__logo" src="./images/logo.svg" alt="Логотип Место">
+            <div class="line"></div>
+        </header>
+        <main class="content">
+            <section class="profile">
+                <img class="profile__avatar" src="./images/cards/Kusto.png" alt="Фото профиля">
+                <div class="profile__info">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button class="profile__edit-button" type="button"></button>
+                    <p class="profile__description">Исследователь океана</p>
+                </div>
+                <button class="profile__add-button" type="button"></button>
+            </section>
 
+            <section class="popup">
+                <div class="popup__container">
+                    <button class="button__close" type="button"></button>
+                    <h3 class="popup__title">Редактировать профиль</h3>
+                    <form class="form" action="#" method="get" name="profile-form">
+                        <input class="form__info form__info_type_name" type="text" name="name" id="name" required>
+                        <input class="form__info form__info_type_job" type="text" name="job" id="job" required>
+                        <button type="submit" class="button-submit">Сохранить</button>
+                    </form>
+                </div>
+            </section>
 
-
-    </header>
-    <main class="content">
-        <section class="profile">
-            <img class="profile__image" src="./images/Kusto.png" alt="Жак-Ив Кусто">
-            <h1 class="profile__title">Жак-Ив Кусто</h1>
-            <p class="profile__subtitle">Исследователь океана</p>
-            <button class="profile__edit"></button>
-
-
-
-
-        </section>
-
-        <section class="elements">
-            <ul class="elements__items">
-                <li class="elements__places">
-                    <img class="elements__place" src="./images/Dombai 2.png" alt="Домбай">
-                    <p class="elements__subtitle">Домбай</p>
-                </li>
-                <li class="elements__places">
-                    <img class="elements__place" src="./images/Karachaevsk 2.png" alt="Карачаевск">
-                    <p class="elements__subtitle">Карачаевск</p>
-                </li>
-                <li class="elements__places">
-                    <img class="elements__place" src="./images/gora Elbrus 1.png" alt="Гора Эльбрус">
-                    <p class="elements__subtitle">Гора Эльбрус</p>
-                </li>
-                <li class="elements__places">
-                    <img class="elements__place" src="./images/Dombai.png" alt="Домбай">
-                    <p class="elements__subtitle">Домбай</p>
-                </li>
-                <li class="elements__places">
-                    <img class="elements__place" src="./images/Karachaevsk 2.png" alt="Карачаево-Черкесия">
-                    <p class="elements__subtitle">Карачаево-Черкесия</p>
-
-
-                </li>
-                <li class="elements__places">
-                    <img class="elements__place" src="./images/gora Elbrus 2.png" alt="Гора Эльбрус">
-                    <p class="elements__subtitle">Гора Эльбрус</p>
-                </li>
-            </ul>
-
-
-
-        </section>
+            <section class="elements__group">
+                <div class="element">
+                    <img class="element__image" src="./images/cards/Karachaevsk 2.png" alt="Фото">
+                    <div class="element__content">
+                        <h2 class="element__title">Карачаевск</h2>
+                        <button type="button" class="element__button-like"></button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="./images/cards/gora Elbrus 1.png" class="element__image" alt="Фото">
+                    <div class="element__content">
+                        <h2 class="element__title">Гора Эльбрус</h2>
+                        <button type="button" class="element__button-like"></button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="./images/cards/Dombai.png" class="element__image" alt="Фото">
+                    <div class="element__content">
+                        <h2 class="element__title">Домбай</h2>
+                        <button type="button" class="element__button-like"></button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="./images/cards/Karachaevsk 2.png" class="element__image" alt="Фото">
+                    <div class="element__content">
+                        <h2 class="element__title">Карачаевo-Черкессия</h2>
+                        <button type="button" class="element__button-like"></button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="./images/cards/gora Elbrus 2.png" class="element__image" alt="Фото">
+                    <div class="element__content">
+                        <h2 class="element__title">Гора Эльбрус</h2>
+                        <button type="button" class="element__button-like"></button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="./images/cards/Dombai.png" class="element__image" alt="Фото">
+                    <div class="element__content">
+                        <h2 class="element__title">Домбай</h2>
+                        <button type="button" class="element__button-like"></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        </main>
 
         <footer class="footer">
             <p class="footer__copyright">© 2020 Mesto Russia</p>
         </footer>
-
-
-    </main>
-
+    </div>
+    <script src="./script/index.js"></script>
 </body>
 
 </html>
