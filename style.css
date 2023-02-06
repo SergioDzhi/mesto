@@ -3,7 +3,6 @@
   max-width: 1280px;
   min-width: 320px;
   margin: 0;
-  background-color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -63,7 +62,7 @@
   }
 }
 
-.profile__name {
+.profile-info__title {
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -76,7 +75,7 @@
   max-width: 300px;
 }
 @media (max-width: 767px) {
-  .profile__name {
+  .profile-info__title {
     font-size: 27px;
     line-height: 33px;
     text-align: center;
@@ -105,7 +104,7 @@
   }
 }
 
-.profile__description {
+.profile-info__subtitle {
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -118,7 +117,7 @@
   overflow: hidden;
 }
 @media (max-width: 767px) {
-  .profile__description {
+  .profile-info__subtitle {
     font-size: 14px;
     line-height: 17px;
     text-align: center;
@@ -149,8 +148,7 @@
     background-size: 16px;
   }
 }
-.footer {
-}
+
 .footer__copyright {
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
@@ -171,40 +169,43 @@
   display: none;
 }
 .popup__container {
-  width: 430px;
-  background-color: white;
-  color: black;
+  box-sizing: border-box;
+  max-width: 430px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 195px auto auto auto;
+  align-items: center;
+  box-shadow: 0 0 25px rgb(0 0 0 / 15%);
   border-radius: 10px;
   position: relative;
-  box-sizing: border-box;
-  display: flex;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
-  flex-direction: column;
 }
 .popup_opened {
   display: flex;
 }
 
-.button__close {
-  background-image: url(../mesto/images/close-icon.svg);
+.popup_close {
+  background-image: url("../mesto/images/111.svg");
   background-color: transparent;
+  background: none;
   width: 32px;
   height: 32px;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: -42px;
-  right: -42px;
+  top: -40px;
+  right: -40px;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
-.button-close:hover {
+.popup_close:hover {
   opacity: 80%;
 }
 
 @media (max-width: 580px) {
-  .button-close {
+  .popup_close {
     width: 20px;
     height: 20px;
     top: -36px;
@@ -226,15 +227,69 @@
   }
 }
 .form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .form__info {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  width: calc(100% - (36px + 36px));
+  outline: none;
 }
 .form__info_type_name {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  max-width: 358px;
+  width: 100%;
+  opacity: 0.2;
+  border: 1px solid #000000;
+  outline: none;
 }
-.form__info_type_jobe {
+.form__info_type_job {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000000;
+
+  max-width: 358px;
+  width: 100%;
+  opacity: 0.2;
+  border: 1px solid #000000;
+  outline: none;
 }
-.button-submit {
+.popup_submit {
+  width: calc(100% - (36px + 36px));
+  height: 50px;
+  background: #000000;
+  border-radius: 2px;
+  margin: 20px 36px 37px 36px;
+  color: #ffffff;
+  border: rgba(0, 0, 0, 0);
+  padding: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  opacity: 1;
 }
+.popup_submit:hover {
+  opacity: 80%;
+}
+
 .elements__group {
   display: flex;
   margin: 50px auto 68px auto;
@@ -247,29 +302,58 @@
 }
 
 @media (max-width: 1080px) {
-  .elements {
+  .elements__group {
     margin-left: 100px;
     margin-right: 100px;
   }
 }
 
 @media (max-width: 870px) {
-  .elements {
+  .elements__group {
     margin-left: 50px;
     margin-right: 50px;
   }
 }
 
 @media (max-width: 700px) {
-  .elements {
+  .elements__group {
     margin-left: 20px;
     margin-right: 20px;
   }
 }
 
 @media (max-width: 320px) {
-  .elements {
+  .elements__group {
     margin: 36px 19px 48px 19px;
     gap: 21px;
   }
+}
+.element {
+  background: #ffffff;
+  border-radius: 10px;
+}
+.element__image {
+}
+.element__content {
+}
+.element__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.element__button-like {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  min-width: 22px;
+  min-height: 19px;
+  padding: 0;
+  justify-self: end;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background: url(../mesto/images/like-black.svg);
 }
