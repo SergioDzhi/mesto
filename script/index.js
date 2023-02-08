@@ -11,6 +11,11 @@ const jobInput = document.querySelector(".form__info_type_job");
 const profileTitle = document.querySelector(".profile-info__title");
 const profileSubtitle = document.querySelector(".profile-info__subtitle");
 
+const elementButtonOpen = document.querySelector(".profile__edit-button");
+
+
+
+
 popupButtonOpen.addEventListener("click", openPopup);
 popupButtonClose.addEventListener("click", closePopup);
 
