@@ -1,4 +1,4 @@
-.elements__group {
+.elements {
   max-width: 880px;
   margin: 51px auto 0;
   display: grid;
@@ -7,26 +7,26 @@
 }
 
 @media (max-width: 1080px) {
-  .elements__group {
+  .elements {
     justify-items: center;
   }
 }
 
 @media (max-width: 870px) {
-  .elements__group {
+  .elements {
     align-content: space-evenly;
   }
 }
 
 @media (max-width: 700px) {
-  .elements__group {
+  .elements {
     margin-left: 19px;
     margin-right: 19px;
   }
 }
 
 @media (max-width: 320px) {
-  .elements__group {
+  .elements {
     margin: 36px 19px 48px 19px;
     gap: 21px;
   }

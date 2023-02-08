@@ -1,4 +1,4 @@
-.popup_close-icon {
+.popup__close-icon {
   cursor: pointer;
   opacity: 1;
 }
@@ -6,7 +6,7 @@
   opacity: 80%;
 }
 @media (max-width: 580px) {
-  .popup_close-icon {
+  .popup__close-icon {
     width: 20px;
     height: 20px;
     top: -36px;
