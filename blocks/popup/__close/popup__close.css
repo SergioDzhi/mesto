@@ -1,4 +1,4 @@
-.popup_close {
+.popup__close {
   background-color: transparent;
   background: none;
   width: 32px;
@@ -12,7 +12,7 @@
   padding: 0;
 }
 @media (max-width: 580px) {
-  .popup_close {
+  .popup__close {
     width: 20px;
     height: 20px;
     top: -36px;

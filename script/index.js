@@ -2,14 +2,14 @@
 const popupButtonOpen = document.querySelector(".profile__edit-button");
 
 const popupContainer = document.querySelector(".popup");
-const popupButtonClose = document.querySelector(".popup_close");
+const popupButtonClose = document.querySelector(".popup__close");
 
 const formElement = document.querySelector(".form");
 const nameInput = document.querySelector(".form__info_type_name");
 const jobInput = document.querySelector(".form__info_type_job");
 
-const profileTitle = document.querySelector(".profile-info__title");
-const profileSubtitle = document.querySelector(".profile-info__subtitle");
+const profileTitle = document.querySelector(".profile__info__title");
+const profileSubtitle = document.querySelector(".profile__info__subtitle");
 
 const elementButtonOpen = document.querySelector(".profile__edit-button");
 
