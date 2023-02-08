@@ -1,0 +1,9 @@
+.form {
+  width: 83.25%;
+  border: 0;
+  padding: 0;
+  margin: 0 0 48px;
+}
+.form:last-of-type {
+  margin: 0;
+}
