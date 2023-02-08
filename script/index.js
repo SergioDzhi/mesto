@@ -8,8 +8,8 @@ const formElement = document.querySelector(".form");
 const nameInput = document.querySelector(".form__info_type_name");
 const jobInput = document.querySelector(".form__info_type_job");
 
-const profileTitle = document.querySelector(".profile__info__title");
-const profileSubtitle = document.querySelector(".profile__info__subtitle");
+const profileTitle = document.querySelector(".profile__title");
+const profileSubtitle = document.querySelector(".profile__subtitle");
 
 const elementButtonOpen = document.querySelector(".profile__edit-button");
 
