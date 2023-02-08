@@ -12,4 +12,4 @@
 4. JavaScript
 5. Макет из Figma
 
-Проект находится по ссылке:https://sergiodzhi.github.io/russian-travel/
+Проект находится по ссылке:https://sergiodzhi.github.io/mesto/
