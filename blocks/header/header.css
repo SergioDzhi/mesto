@@ -1,16 +1,10 @@
 .header {
+  width: 100%;
   margin-top: 45px;
   border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
-@media (max-width: 880px) {
-  .header {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-}
 @media (max-width: 767px) {
   .header {
-    margin-top: 28px;
-    margin-left: 27px;
+    margin: 0;
   }
 }
