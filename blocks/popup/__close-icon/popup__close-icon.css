@@ -3,7 +3,8 @@
   opacity: 1;
 }
 .popup__close-icon:hover {
-  opacity: 80%;
+  opacity: 0.6;
+  transition: 0.2s linear;
 }
 @media (max-width: 580px) {
   .popup__close-icon {

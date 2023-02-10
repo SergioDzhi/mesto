@@ -20,5 +20,8 @@
 @media (max-width: 320px) {
   .footer__copyright {
     margin: 48px 19px 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
   }
 }

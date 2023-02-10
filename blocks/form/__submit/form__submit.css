@@ -1,8 +1,8 @@
-.popup__submit {
+.form__submit {
   width: 100%;
   height: 50px;
   margin-bottom: 0;
-  border: 0;
+  border: none;
   font-family: inherit;
   box-sizing: border-box;
   padding: 0;
@@ -16,12 +16,14 @@
   transition: opacity 0.3s linear;
 }
 @media (max-width: 580px) {
-  .popup__submit {
+  .form__submit {
     margin: 0;
     height: 46px;
+    font-size: 14px;
+    line-height: 16.94px;
   }
 }
 
-.popup_submit:hover {
+.form__submit:hover {
   opacity: 80%;
 }
