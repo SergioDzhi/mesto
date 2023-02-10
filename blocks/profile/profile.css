@@ -1,12 +1,12 @@
 .profile {
   display: flex;
   align-items: center;
-  margin: 40px 0 48px;
+  margin: 40px 48px;
 }
 @media (max-width: 880px) {
   .profile {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 19px;
+    padding-left: 19px;
   }
 }
 
