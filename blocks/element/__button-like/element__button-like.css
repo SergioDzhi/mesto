@@ -1,19 +1,19 @@
 .element__button-like {
   background-image: url(../../../images/like.jpg);
-  background-size: contain;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: contain;
   min-width: 22px;
   height: 19px;
-  border-style: none;
   cursor: pointer;
-  transition: 0.3s;
   border: none;
+  padding: 0;
+  margin: auto 0;
   background-color: transparent;
-  opacity: 1;
 }
 
 .element__button-like:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .element__button-like:active {
   background-image: url(../../../images/like-black.svg);

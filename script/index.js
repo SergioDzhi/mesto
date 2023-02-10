@@ -11,13 +11,8 @@ const jobInput = document.querySelector(".form__info_type_job");
 const profileTitle = document.querySelector(".profile__title");
 const profileSubtitle = document.querySelector(".profile__subtitle");
 
-const elementButtonOpen = document.querySelector(".profile__edit-button");
 
 
-
-
-popupButtonOpen.addEventListener("click", openPopup);
-popupButtonClose.addEventListener("click", closePopup);
 
 function openPopup() {
   popupContainer.classList.add("popup_opened");
@@ -32,9 +27,6 @@ function closePopup() {
 function handleFormSubmit (evt) {
     evt.preventDefault();
 
-    console.log(nameInput.value);
-    console.log(jobInput.value);
-
     profileTitle.textContent = nameInput.value;
     profileSubtitle.textContent = jobInput.value;
 
@@ -42,7 +34,8 @@ function handleFormSubmit (evt) {
 }
 
 formElement.addEventListener('submit', handleFormSubmit);
-
+popupButtonOpen.addEventListener("click", openPopup);
+popupButtonClose.addEventListener("click", closePopup);
 
 
 
