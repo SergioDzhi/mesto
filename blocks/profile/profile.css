@@ -1,18 +1,22 @@
 .profile {
   display: flex;
   align-items: center;
-  margin: 40px 48px;
+  margin: 37px auto 48px;
+  box-sizing: border-box;
 }
-@media (max-width: 880px) {
+
+@media (max-width: 900px) {
   .profile {
-    padding-right: 19px;
-    padding-left: 19px;
+    max-width: 85%;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
 @media (max-width: 767px) {
   .profile {
     flex-direction: column;
-    margin: 39px 0 36px;
+    margin: 39px auto 36px;
+    padding: 0;
   }
 }
