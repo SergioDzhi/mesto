@@ -5,7 +5,8 @@
   font-size: 18px;
   line-height: 22px;
   color: #545454;
-  margin-top: 60px;
+  margin-top: 67px;
+  margin-bottom: 60px;
 }
 @media (max-width: 879px) {
   .footer__copyright {
@@ -20,7 +21,6 @@
 @media (max-width: 320px) {
   .footer__copyright {
     margin: 48px 19px 30px;
-    font-weight: 400;
     font-size: 14px;
     line-height: 16.94px;
   }

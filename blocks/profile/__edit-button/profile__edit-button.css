@@ -8,7 +8,7 @@
   border: 1px solid #ffffff;
   align-self: center;
   transition: opacity 200ms;
-
+  padding: 0;
 }
 .profile__edit-button:hover {
   opacity: 0.6;
@@ -17,6 +17,6 @@
   .profile__edit-button {
     width: 18px;
     height: 18px;
-    margin: 0;
+    margin-left: 10px;
   }
 }

@@ -2,7 +2,7 @@
   width: 100%;
   height: 50px;
   margin-bottom: 0;
-  border: none;
+  border-radius: 2px;
   font-family: inherit;
   box-sizing: border-box;
   padding: 0;
