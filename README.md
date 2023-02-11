@@ -14,4 +14,4 @@
 4. **JavaScript**
 5. **Макет из Figma** 
 
-**Проект находится по ссылке:https://sergiodzhi.github.io/mesto/**
+**Проект находится по ссылке: https://sergiodzhi.github.io/mesto/**
