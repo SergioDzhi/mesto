@@ -10,8 +10,8 @@
 
 1. **HTML**
 2. **CSS**
-3. **Структуразация файлов по БЭМ (метод Nested)**
-4. **JavaScript**
+3. **JavaScript**
+4. **Структуразация файлов по БЭМ (метод Nested)**
 5. **Макет из Figma: https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=28212%3A2&t=uA76fYvevPRtJbEc-0**
 
 **Проект находится по ссылке: https://sergiodzhi.github.io/mesto/**
