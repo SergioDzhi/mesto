@@ -10,6 +10,7 @@
   padding: 0;
   margin: auto 0;
   background-color: transparent;
+  margin-right: 4px;
 }
 
 .element__button-like:hover {

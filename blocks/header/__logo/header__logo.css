@@ -6,25 +6,14 @@
 
 @media (max-width: 900px) {
   .header__logo {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 27px;
   }
 }
-@media (max-width: 767px) {
-  .header__logo {
-    margin-top: 28px;
-    margin-left: 42px;
-    width: 104px;
-    height: 25px;
-    margin-bottom: 32px;
-  }
-}
+
 @media (max-width: 500px) {
   .header__logo {
-    margin-top: 28px;
-    margin-left: 27px;
     width: 104px;
     height: 25px;
-    margin-bottom: 32px;
+    margin-bottom: 31.6px;
   }
 }
