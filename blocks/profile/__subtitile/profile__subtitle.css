@@ -10,11 +10,11 @@
   white-space: nowrap;
   overflow: hidden;
 }
-@media (max-width: 767px) {
+@media (max-width: 1020px) {
   .profile__subtitle {
+    text-align: center;
+    padding-top: 8px;
     font-size: 14px;
     line-height: 17px;
-    text-align: center;
-    padding-top: 14px;
   }
 }

@@ -5,18 +5,18 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1020px) {
   .profile {
-    max-width: 85%;
-    align-items: center;
-    flex-wrap: wrap;
+    max-width: 600px;
+    flex-direction: column;
+    margin: 36px auto 47px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   .profile {
-    flex-direction: column;
-    margin: 39px auto 36px;
-    padding: 0;
+    max-width: 282px;
+    margin-top: 38.25px;
+    margin-bottom: 36px;
   }
 }
