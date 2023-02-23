@@ -21,16 +21,16 @@
                     <button class="profile__edit-button" aria-label="Редактировать" type="button"></button>
                     <p class="profile__subtitle">Исследователь океана</p>
                 </div>
-                <button class="profile__add-button" aria-label="Добаить" type="button"></button>
+                <button class="profile__add-button" aria-label="Добавить" type="button"></button>
             </section>
 
-            <div class="popup">
+            <div class="popup popup_type_profile">
                 <div class="popup__container">
-                    <button class="popup__close" type="button">
+                    <button class="popup__close_profile" type="button">
                         <img class="popup__close-icon" src="./images/close-icon.svg">
                     </button>
 
-                    <form class="form" action="#" method="get" name="profile-form">
+                    <form class="form__edit" action="#" method="get" name="profile-form">
                         <h3 class="popup__title">Редактировать профиль</h3>
                         <input class="form__info form__info_type_name" type="text" name="name" id="name" required>
                         <input class="form__info form__info_type_job" type="text" name="job" id="job" required>
@@ -41,49 +41,26 @@
                 </div>
             </div>
 
-            <section class="elements">
-                <article class="element">
-                    <img class="element__image" src="./images/cards/Karachaevsk 2.jpg" alt="Карачаевск">
-                    <div class="element__content">
-                        <h2 class="element__title">Карачаевск</h2>
-                        <button type="button" class="element__button-like"></button>
-                    </div>
-                </article>
-                <div class="element">
-                    <img class="element__image" src="./images/cards/gora Elbrus 1.jpg" alt="Гора Эльбрус">
-                    <div class="element__content">
-                        <h2 class="element__title">Гора Эльбрус</h2>
-                        <button type="button" class="element__button-like"></button>
-                    </div>
+            <div class="popup popup_type_cards">
+                <div class="popup__container">
+                    <button class="popup__close_card" type="button">
+                        <img class="popup__close-icon" src="./images/close-icon.svg">
+                    </button>
+                    </button>
+
+                    <form class="form__add action=" #" method="get" name="popup-places">
+                        <h2 class="popup__title">Новое место</h2>
+                        <input class="form__input form__input_type_place" type="text" name="popup-place"
+                            id="popup-place" placeholder="Название">
+                        <input class="form__input form__input_type_src" type="text" name="popup-src"
+                            placeholder="Ссылка на картинку">
+                        <button class="form__submit_places" aria-label="Создать" type="submit">Создать</button>
+                    </form>
                 </div>
-                <article class="element">
-                    <img class="element__image" src="./images/cards/Dombai.jpg" alt="Домбай">
-                    <div class="element__content">
-                        <h2 class="element__title">Домбай</h2>
-                        <button type="button" class="element__button-like"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img class="element__image" src="./images/cards/Karachaevsk 2.jpg" alt="Карачаевo-Черкессия">
-                    <div class="element__content">
-                        <h2 class="element__title">Карачаевo-Черкессия</h2>
-                        <button type="button" class="element__button-like"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img class="element__image" src="./images/cards/gora Elbrus 1.jpg" alt="Гора Эльбрус">
-                    <div class="element__content">
-                        <h2 class="element__title">Гора Эльбрус</h2>
-                        <button type="button" class="element__button-like"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img class="element__image" src="./images/cards/Dombai.jpg" alt="Домбай">
-                    <div class="element__content">
-                        <h2 class="element__title">Домбай</h2>
-                        <button type="button" class="element__button-like"></button>
-                    </div>
-                </article>
+            </div>
+            <div class="popup popup_type_zoom-image"></div>
+
+            <section class="elements">
             </section>
         </main>
         <footer class="footer">

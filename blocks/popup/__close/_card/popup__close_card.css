@@ -1,4 +1,4 @@
-.popup__close_profile {
+.popup__close_card {
   background-color: transparent;
   background: none;
   width: 32px;
@@ -12,7 +12,7 @@
   padding: 0;
 }
 @media (max-width: 580px) {
-  .popup__close_profile {
+  .popup__close_card {
     width: 20px;
     height: 20px;
     top: -36px;

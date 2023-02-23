@@ -1,9 +1,7 @@
 .element {
-  max-width: 282px;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  background-color: white;
-  justify-content: center;
+  max-width: 282px;
+  min-height: 361px;
+  color: #000;
 }

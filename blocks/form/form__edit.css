@@ -1,15 +1,15 @@
-.form {
+.form__edit {
   box-sizing: content-box;
   width: 83.25%;
   border: 0;
   padding: 34px 36px 37px;
 }
-.form:last-of-type {
+.form__edit:last-of-type {
   margin: 0;
 }
 
 @media (max-width: 580px) {
-  .form {
+  .form__edit {
     padding: 25px 22px;
   }
 }
