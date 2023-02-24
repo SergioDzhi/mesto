@@ -122,11 +122,14 @@ function handleCloseAddButtonClick () {
 }
 
 function handleFormSubmit (event) {
-    event.preventDefault();
-    profileTitle.textContent = nameInput.value;
-    profileSubtitle.textContent = jobInput.value;
-    handleCloseButtonClick();
+  event.preventDefault();
+  profileTitle.textContent = nameInput.value;
+  profileSubtitle.textContent = jobInput.value;
+  handleCloseButtonClick();
 }
+
+
+
 
 
 editButton.addEventListener('click', handleEditButtonClick);
