@@ -4,7 +4,7 @@
 
 **Четвертый проект по теме: HTML/CSS + JavaScript**
 
-![Mesto - Google Chrome](https://user-images.githubusercontent.com/119122301/218282648-795d0f20-fe53-4f0c-be78-9507d4926697.png)
+![image](https://user-images.githubusercontent.com/119122301/221227135-fe6d4282-aa5a-47b0-869f-17d45087554a.png)
 
 **Для его реализации были использованы:**
 
