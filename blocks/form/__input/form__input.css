@@ -1,24 +1,14 @@
 .form__input {
-  font-family: "Inter", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  outline: none;
-  padding: 0 0 13px;
-  width: 100%;
-  border: 0;
-  box-sizing: border-box;
-  margin: 0 0 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    border: none;
+    font-family: "Inter", Arial, sans-serif;
+    color: #000000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0;
+    padding-bottom: 13px;
 }
-.form__input:last-of-type {
-  margin: 0 0 48px;
-}
-
-@media (max-width: 580px) {
-  .form__input:last-of-type {
-    margin: 0 0 45px;
-  }
+.form__input:first-child {
+    margin-bottom: 30px;
 }

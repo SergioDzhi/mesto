@@ -1,22 +1,22 @@
 .profile {
-  display: flex;
-  align-items: center;
-  margin: 37px auto 48px;
-  box-sizing: border-box;
-}
-
-@media (max-width: 1020px) {
-  .profile {
-    max-width: 600px;
-    flex-direction: column;
-    margin: 36px auto 47px;
+    display: flex;
+    align-items: center;
+    margin: 37px auto 48px;
+    box-sizing: border-box;
   }
-}
-
-@media (max-width: 500px) {
-  .profile {
-    max-width: 282px;
-    margin-top: 38.25px;
-    margin-bottom: 36px;
+  
+  @media (max-width: 1020px) {
+    .profile {
+      max-width: 600px;
+      flex-direction: column;
+      margin: 36px auto 47px;
+    }
   }
-}
+  
+  @media (max-width: 500px) {
+    .profile {
+      max-width: 282px;
+      margin-top: 38.25px;
+      margin-bottom: 36px;
+    }
+  }

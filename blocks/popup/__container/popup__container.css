@@ -1,24 +1,10 @@
 .popup__container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  max-width: 430px;
-  justify-content: center;
-  align-items: center;
-  background: #ffffff;
+  width: 430px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
+  position: relative;
 }
-
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 462px) {
   .popup__container {
-    max-width: 282px;
-    margin: 0 auto;
+    width: 282px;
   }
 }
-
-/* @media screen and (max-width: 320px) {
-  .popup__container {
-    max-width: 282px;
-  }
-} */

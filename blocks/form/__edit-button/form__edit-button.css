@@ -1,0 +1,27 @@
+.form__edit-button {
+  background-color: black;
+  color: white;
+  margin-top: 48px;
+  min-height: 50px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 37px;
+  padding: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+}
+.form__edit-button:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 462px) {
+  .form__edit-button {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    min-height: 46px;
+  }
+}

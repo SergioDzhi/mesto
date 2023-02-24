@@ -1,5 +1,25 @@
-const initialCards = [
-  
+const profile = document.querySelector('.profile');
+const editButton = profile.querySelector('.profile__edit-button');
+const profileTitle = profile.querySelector('.profile__title');
+
+const addButton = document.querySelector('.profile__add-button');
+const closeAddButton = document.querySelector('.popup__close-button_type_add');
+const popupAdd = document.querySelector('.popup_type_add');
+const formAdd = document.querySelector('.form_type_add');
+const inputTitle = formAdd.querySelector('.form__input_type_title');
+const inputLink = formAdd.querySelector('.form__input_type_link');
+const saveAddButton = formAdd.querySelector('.form__edit-button_type_save');
+
+
+const profileSubtitle = profile.querySelector('.profile__subtitle');
+const popup = document.querySelector('.popup');
+const closeButton = popup.querySelector('.popup__close-button');
+const formElement = document.querySelector('.form');
+const nameInput = formElement.querySelector('.form__input_type_name');
+const jobInput = formElement.querySelector('.form__input_type_about');
+const submitButton = formElement.querySelector('.form__edit-button');
+
+const  initialCards = [
   {
     name: 'Архыз',
     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
@@ -24,191 +44,94 @@ const initialCards = [
     name: 'Байкал',
     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
   }
+  
 ];
 
-
-
-
-// Создание разметки HTML Element
-
-const createCard = (name, link) => {
-  const placeElements = document.querySelector(".elements")
-  const articleElement = document.createElement("article")
-  articleElement.classList.add('element')
-  placeElements.appendChild(articleElement)
-
-  const btnTrash = document.createElement("button-trash")
-  btnTrash.classList.add("element__button-trash")
-  btnTrash.setAttribute("type", "button")
-  articleElement.appendChild(btnTrash)
+const popupImage = document.querySelector('.popup_type_images');
+const closeButtonImage = popupImage.querySelector('.popup__close-button-image');
+const image = popupImage.querySelector('.popup__image');
+const imageName = popupImage.querySelector('.popup__image-name');
+const elements = document.querySelector('.elements');
+const template = document.getElementById('template__elements');
+let getCard = (item) => {
+  let cardElement = template.content.cloneNode(true);
+  let cardTitle = cardElement.querySelector('.elements__title');
+  cardTitle.textContent = item.name;
+  let cardImage = cardElement.querySelector('.elements__image');
+  cardImage.src = item.link;
+  cardImage.alt = item.name;
+  cardElement.querySelector('.elements__like').addEventListener('click', function(event) {
+    event.target.classList.toggle('elements__like_active');
+   });
+  cardElement.querySelector('.elements__trash').addEventListener('click', function(event) {
+  event.target.closest('.elements__items').remove();
+  })
   
-  const imageElement = document.createElement("img")
-  imageElement.classList.add('element__image')
-  imageElement.setAttribute("src", link)
-  imageElement.setAttribute("alt", name)
-  articleElement.appendChild(imageElement)
-  
-  const elementContent = document.createElement("div")
-  elementContent.classList.add("element__content")
-  articleElement.appendChild(elementContent)
-  
-  const titleElement = document.createElement("h2")
-  titleElement.classList.add("element__title")
-  titleElement.textContent = name
-  elementContent.appendChild(titleElement)
-  
-  const btnLike = document.createElement("button")
-  btnLike.classList.add("element__button-like")
-  btnLike.setAttribute("type", "button")
-  elementContent.appendChild(btnLike)
+  cardImage.addEventListener('click', function() {
+    image.src = item.link;
+    image.alt = item.name;
+    imageName.textContent = item.name;
+    handleImageButtonClick(popupImage);
+
+  });
+
+  elements.prepend(cardElement);
+  return cardElement;
+};
+
+
+let renderCard = (item, elements) => {
+  elements.prepend(getCard(item));
 }
-  
-
-
-
-initialCards.forEach((card) => {
-  createCard(card.name, card.link)
+formAdd.addEventListener('submit', (event) => {
+  event.preventDefault();
+  let inputsNameLink = {
+    name: inputTitle.value,
+    link: inputLink.value
+  };
+  renderCard(inputsNameLink, elements);
+  handleCloseAddButtonClick();
+})
+initialCards.forEach(function (inputsNameLink) {
+  renderCard(inputsNameLink, elements);
 })
 
 
-
-
-
-
-
-
-
-
-
-const popupButtonOpen = document.querySelector(".profile__edit-button");
-
-const popupContainer = document.querySelector(".popup_type_profile");
-const popupButtonClose = document.querySelector(".popup__close_profile");
-
-const formElement = document.querySelector(".form__edit");
-const nameInput = document.querySelector(".form__info_type_name");
-const jobInput = document.querySelector(".form__info_type_job");
-
-const profileTitle = document.querySelector(".profile__title");
-const profileSubtitle = document.querySelector(".profile__subtitle");
-
-
-
-
-
-
-const popupButtonСardAdd = document.querySelector('.profile__add-button');
-const popupСardAdd = document.querySelector('.popup_type_cards');
-const popupСardClose = document.querySelector('.popup__close_card');
-
-const cardElement = document.querySelector(".form__add");
-const placeInput = document.querySelector('.form__input_type_place');
-const imagelinkInput = document.querySelector('.popup__input_type_src');
-
-const inputType = document.querySelector(".form__input_type_place")
-
-
-
-const imageZoom = document.querySelector('.popup_type_zoom-image')
-
-
-
-
-
-
-//Открытие Попап профиля
-
-function openPopup() {
-  popupContainer.classList.add("popup_opened");
-  nameInput.value = profileTitle.textContent;
-  jobInput.value = profileSubtitle.textContent;
+function handleImageCloseButtonClick () {
+  popupImage.classList.remove('popup_opened');
 }
 
-function closePopup() {
-  popupContainer.classList.remove("popup_opened");
+function handleImageButtonClick () {
+  popupImage.classList.add('popup_opened');
+}
+function handleEditButtonClick () {
+    popup.classList.add('popup_opened');
+    nameInput.value = profileTitle.textContent;
+    jobInput.value = profileSubtitle.textContent;
+}
+function handleCloseButtonClick () {
+  popup.classList.remove('popup_opened');
 }
 
-function handleFormSubmit (evt) {
-    evt.preventDefault();
+function handleAddButtonClick () {
+  popupAdd.classList.add('popup_opened');
+}
 
+function handleCloseAddButtonClick () {
+  popupAdd.classList.remove('popup_opened');
+}
+
+function handleFormSubmit (event) {
+    event.preventDefault();
     profileTitle.textContent = nameInput.value;
     profileSubtitle.textContent = jobInput.value;
-
-    closePopup();
+    handleCloseButtonClick();
 }
-// Слушатели
 
+
+editButton.addEventListener('click', handleEditButtonClick);
+closeButton.addEventListener('click', handleCloseButtonClick);
 formElement.addEventListener('submit', handleFormSubmit);
-popupButtonOpen.addEventListener("click", openPopup);
-popupButtonClose.addEventListener("click", closePopup);
-
-
-
-
-
-
-
-
-
-// Добавление карточки
-
-function openPopupCard() {
-
-  popupСardAdd.classList.add("popup__card_opened");
-
-  
-}
-function closePopupCard() {
-  popupСardAdd.classList.remove("popup__card_opened");
-}
-
-function handleFormCard (evt) {
-  evt.preventDefault();
-
-  // let nameCard = evt.target.form__input_type_place.value;
-  // let linkCard = evt.target.form__input_type_src.value;
-
-  
-  // initialCards.push({name: nameCard, link: linkCard})
-
-  closePopupCard();
-}
-
-
-
-cardElement.addEventListener('submit', handleFormCard);
-popupButtonСardAdd.addEventListener("click", openPopupCard);
-popupСardClose.addEventListener("click", closePopupCard);
-
-
-
-// function handleFormAddCard (event) {
-//   event.preventDefault();
-//   const  linkCard = event.textContent
-//   const  nameCard = event.textContent
-//   profileTitle.textContent = nameInput.value;
-//   profileSubtitle.textContent = linkInput.value;
-
-//   initialCards.unshift({name: nameCard, link: linkCard})
-
-
-//   closePopupCreateCard();
-// }
-
-// createCardBtn.addEventListener('click', handleFormAddCard);
-
-// popupButtonPlaceOpen.addEventListener("click", openPopupCreateCard);
-// popupButtonPlaceClose.addEventListener("click", closePopupCreateCard);
-
-
-
-
-
-
-
-
-
-
-
-
-
+addButton.addEventListener('click', handleAddButtonClick);
+closeAddButton.addEventListener('click',  handleCloseAddButtonClick);
+closeButtonImage.addEventListener('click',  handleImageCloseButtonClick);

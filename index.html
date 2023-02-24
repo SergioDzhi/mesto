@@ -21,53 +21,64 @@
                     <button class="profile__edit-button" aria-label="Редактировать" type="button"></button>
                     <p class="profile__subtitle">Исследователь океана</p>
                 </div>
-                <button class="profile__add-button" aria-label="Добавить" type="button"></button>
+                <button class="profile__add-button" aria-label="Добаить" type="button"></button>
             </section>
-
-            <div class="popup popup_type_profile">
-                <div class="popup__container">
-                    <button class="popup__close_profile" type="button">
-                        <img class="popup__close-icon" src="./images/close-icon.svg">
-                    </button>
-
-                    <form class="form__edit" action="#" method="get" name="profile-form">
-                        <h3 class="popup__title">Редактировать профиль</h3>
-                        <input class="form__info form__info_type_name" type="text" name="name" id="name" required>
-                        <input class="form__info form__info_type_job" type="text" name="job" id="job" required>
-                        <button class="form__submit" aria-label="Сохранить" type="submit">
-                            Сохранить
-                        </button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="popup popup_type_cards">
-                <div class="popup__container">
-                    <button class="popup__close_card" type="button">
-                        <img class="popup__close-icon" src="./images/close-icon.svg">
-                    </button>
-                    </button>
-
-                    <form class="form__add action=" #" method="get" name="popup-places">
-                        <h2 class="popup__title">Новое место</h2>
-                        <input class="form__input form__input_type_place" type="text" name="popup-place"
-                            id="popup-place" placeholder="Название">
-                        <input class="form__input form__input_type_src" type="text" name="popup-src"
-                            placeholder="Ссылка на картинку">
-                        <button class="form__submit_places" aria-label="Создать" type="submit">Создать</button>
-                    </form>
-                </div>
-            </div>
-            <div class="popup popup_type_zoom-image"></div>
-
             <section class="elements">
             </section>
         </main>
         <footer class="footer">
             <p class="footer__copyright">© 2023 Mesto Russia</p>
         </footer>
-    </div>
-    <script src="./script/index.js"></script>
+        <template id="template__elements">
+            <div class="elements__items">
+                <img class="elements__image" src="#" alt="">
+                <button class="elements__trash" type="button"></button>
+                <div class="elements__wrap">
+                    <h2 class="elements__title"></h2>
+                    <button class="elements__like" type="button"></button>
+                </div>
+            </div>
+        </template>
+        <section class="popup">
+            <div class="popup__container">
+                <button class="popup__close-button" type="button"></button>
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <form class="form" name="form" method="post">
+                    <fieldset class="form__edit-form">
+                        <input class="form__input form__input_type_name" name="name" placeholder="Имя" type="text">
+                        <input class="form__input form__input_type_about" name="about" placeholder="О себе" type="text">
+                        <button class="form__edit-button" type="submit">Сохранить</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="popup popup_type_add">
+            <div class="popup__container popup__container_type_add">
+                <button class="popup__close-button popup__close-button_type_add" type="button"></button>
+                <h2 class="popup__title popup__title_type_add">Новое место</h2>
+                <form class="form form_type_add" name="form" method="post">
+                    <fieldset class="form__edit-form form__edit-form_type_add">
+                        <input class="form__input form__input_type_title" name="title" placeholder="Название"
+                            type="text">
+                        <input class="form__input form__input_type_link" name="link" placeholder="Ссылка на картинку"
+                            type="url">
+                        <button class="form__edit-button form__edit-button_type_save" type="submit">Создать</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="popup popup_type_images">
+            <div class="popup_type-wrap">
+                <div class="popup__close-button-wrap">
+                    <button class="popup__close-button-image" type="button"></button>
+                </div>
+                <div class="popup__image-wrap">
+                    <img class="popup__image" src="#" alt="">
+                    <p class="popup__image-name"></p>
+                </div>
+            </div>
+        </section>
+        <script src="./script/index.js"></script>
 </body>
 
 </html>
