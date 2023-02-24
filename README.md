@@ -12,6 +12,6 @@
 2. **CSS**
 3. **JavaScript**
 4. **Структуразация файлов по БЭМ (метод Nested)**
-5. **Макет из Figma: https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=28212%3A2&t=uA76fYvevPRtJbEc-0**
+5. **Работа с DOM элементами**
 
 **Проект находится по ссылке: https://sergiodzhi.github.io/mesto/**
