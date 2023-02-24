@@ -1,4 +1,4 @@
-.popup_type-wrap {
+.popup__wrap {
   display: flex;
   flex-direction: row-reverse;
 }
