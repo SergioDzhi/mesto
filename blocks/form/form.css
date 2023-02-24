@@ -1,15 +1,11 @@
 .form {
-  box-sizing: content-box;
-  width: 83.25%;
-  border: 0;
-  padding: 34px 36px 37px;
+  max-width: 430px;
+  background: #ffffff;
+  border-radius: 10px;
 }
-.form:last-of-type {
-  margin: 0;
-}
-
-@media (max-width: 580px) {
+@media screen and (max-width: 462px) {
   .form {
-    padding: 25px 22px;
+    max-width: 282px;
+    margin: auto;
   }
 }
