@@ -2,7 +2,7 @@
 
 ---
 
-**Четвертый проект по теме: HTML/CSS + JavaScript**
+**Пятый проект по теме: HTML/CSS + JavaScript**
 
 ![image](https://user-images.githubusercontent.com/119122301/221227135-fe6d4282-aa5a-47b0-869f-17d45087554a.png)
 
