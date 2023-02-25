@@ -1,8 +1,9 @@
 .elements__wrap {
-  max-width: 246px;
-  min-height: 79px;
-  margin-left: 21px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  max-width: 282px;
+  padding: 25px 20px 31px 21px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }

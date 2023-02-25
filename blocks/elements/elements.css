@@ -5,10 +5,12 @@
   grid-template-rows: repeat(2, 1fr);
   row-gap: 20px;
   column-gap: 17px;
-  margin-top: 51px;
+  margin-top: 48px;
   cursor: pointer;
+  background-color: black;
 }
-@media screen and (max-width: 880px) {
+
+@media screen and (max-width: 940px) {
   .elements {
     max-width: 581px;
     grid-template-columns: repeat(2, 282px);
@@ -18,7 +20,7 @@
     margin-top: 45px;
   }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
   .elements {
     max-width: 282px;
     grid-template-columns: repeat(1, 282px);

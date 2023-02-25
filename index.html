@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesto</title>
     <link rel="stylesheet" href="./pages/index.css">
+    <script defer src="./script/constants.js"></script>
+    <script defer src="./script/index.js"></script>
 </head>
 
 <body class="root">
@@ -39,14 +41,16 @@
                 </div>
             </div>
         </template>
-        <section class="popup">
+        <section class="popup popup_type_profile">
             <div class="popup__container">
                 <button class="popup__close-button" type="button"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
                 <form class="form" name="form" method="post">
                     <fieldset class="form__edit-form">
-                        <input class="form__input form__input_type_name" name="name" placeholder="Имя" type="text">
-                        <input class="form__input form__input_type_about" name="about" placeholder="О себе" type="text">
+                        <input class="form__input form__input_type_name" name="name" placeholder="Имя" type="text"
+                            required>
+                        <input class="form__input form__input_type_about" name="about" placeholder="О себе" type="text"
+                            required>
                         <button class="form__edit-button" type="submit">Сохранить</button>
                     </fieldset>
                 </form>
@@ -59,9 +63,9 @@
                 <form class="form form_type_add" name="form" method="post">
                     <fieldset class="form__edit-form form__edit-form_type_add">
                         <input class="form__input form__input_type_title" name="title" placeholder="Название"
-                            type="text">
+                            type="text" required>
                         <input class="form__input form__input_type_link" name="link" placeholder="Ссылка на картинку"
-                            type="url">
+                            type="url" required>
                         <button class="form__edit-button form__edit-button_type_save" type="submit">Создать</button>
                     </fieldset>
                 </form>
@@ -79,7 +83,7 @@
             </div>
         </section>
     </div>
-    <script src="./script/index.js"></script>
+
 </body>
 
 </html>
